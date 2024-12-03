@@ -11,7 +11,9 @@ router.get("/", (req, res) => {
 // Rotta per ottenere un singolo post per ID (Show) 
 router.get("/:id", (req, res) => {
     const postsId = req.params.id;
-    res.json("Leggiamo un determinato post" + " " +postsId);
+    const post = posts.find((post) => post.id === postsId);
+    // res.json("Leggiamo un determinato post" + " " +postsId);
+    res.json(post);
 });
 
 // Rotta per creare un nuovo post (Create)
