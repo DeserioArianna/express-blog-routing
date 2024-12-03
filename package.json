@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "name": "express-blog-routing",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
